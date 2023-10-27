@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>TeeTurtle Collection</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Cart Drawer  -->
+        <!-- Slide 1 -->
+        <div id="cart" class="cart-drawer">
+            <div id="dismissCart">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+            </div>
+            <div class="cart-item-wrapper">
+                <form action="#" method="post" id="cart-drawer">
+                    <div class="cart-item-list">
+                        <ul class="list-unstyled">
+                            <li class="cart-item">
+                                <div class="cart-item-contents container-fluid">
+                                    <div class="row">
+                                        <div class="cart-drawer-image col-4">
+                                            <a href="#">
+                                                <img src="img/ohhh-Burn-teeturtle_335x.progressive.jpg" alt="Ohhh Burn" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="cart-drawer-info col-8">
+                                            <a class="cart-drawer-title" href="#">Ohhh Burn</a>
+                                            <div class="cart-drawer-variant">T-Shirt / Men's / XL</div>
+                                            <div class="cart-drawer-qtyamt d-flex justify-content-between">
+                                                <div class="input-group input-group-sm cart-drawer-qty">
+                                                    <div class="input-group-prepend">
+                                                        <button type="button" class="input-group-text btn btn-number" data-type="minus" data-field="qty[1]">
+                                                            <i class="fas fa-minus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <input type="text" name="qty[1]" class="form-control input-number" value="1" min="0">
+                                                    <div class="input-group-append">
+                                                        <button type="button" class="input-group-text btn btn-number" data-type="plus" data-field="qty[1]">
+                                                            <i class="fas fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-drawer-price">
+                                                    $25
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="remove-item">
+                                            <i class="fas fa-times-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end cart item -->
+                            <li class="cart-item">
+                                <div class="cart-item-contents container-fluid">
+                                    <div class="row">
+                                        <div class="cart-drawer-image col-4">
+                                            <a href="#">
+                                                <img src="img/Kiss-the-Girl-Little-Mermaid-Colors_2_800x800_SEPS_335x.progressive.jpg" alt="Ohhh Burn" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="cart-drawer-info col-8">
+                                            <a class="cart-drawer-title" href="#">Kiss the Girl</a>
+                                            <div class="cart-drawer-variant">T-Shirt / Women's / S</div>
+                                            <div class="cart-drawer-qtyamt d-flex justify-content-between">
+                                                <div class="input-group input-group-sm cart-drawer-qty">
+                                                    <div class="input-group-prepend">
+                                                        <button type="button" class="input-group-text btn btn-number" data-type="minus" data-field="qty[2]">
+                                                            <i class="fas fa-minus"></i>
+                                                        </button>
+                                                    </div>
+                                                    <input type="text" name="qty[2]" class="form-control input-number" value="1" min="0">
+                                                    <div class="input-group-append">
+                                                        <button type="button" class="input-group-text btn btn-number" data-type="plus" data-field="qty[2]">
+                                                            <i class="fas fa-plus"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-drawer-price">
+                                                    $12.50
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="remove-item">
+                                            <i class="fas fa-times-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end cart item -->
+
+
+                        </ul>
+                    </div>
+
+                    <div class="checkout-buttons">
+                        <div class="subtotal d-flex justify-content-between">
+                            <div class="label">Subtotal</div>
+                            <div class="ammount">$37.50</div>
+                        </div>
+                        <div class="input-group promo-box">
+                            <input class="form-control promo-input" type="text" placeholder="Apply a promo code" aria-label="Apply a promo code">
+                            <div class="input-group-append">
+                                <button type="submit" class="input-group-text btn" id="promo-apply">
+                                    <h6>Apply
+                                        </h3>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="total d-flex justify-content-between align-items-center">
+                            <div class="label">Total</div>
+                            <div class="shipping-disclaimer">(shipping calculated at checkout)</div>
+                            <div class="ammount">$37.50</div>
+                        </div>
+                        <div class="checkout-btn">
+                            <button id="checkOut" type="button" name="checkout" class="btn btn-lg btn-primary btn-block">Check
+                                Out
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div id="cart-email-prompt" class="cart-drawer">
+            <div class="cart-drawer-nav">
+                <div id="backFromEmail" class="cart-back-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div id="dismissCart">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="cart-header">
+                <h3>Hello!</h3>
+            </div>
+
+            <div class="cart-item-wrapper">
+                <form action="#" method="post" id="email-prompt">
+                    <div class="cart-email-form">
+                        <div class="form-group">
+                            <label for="cart-email-init">Email address*</label>
+                            <input id="cart-email-init" class="form-control" type="email" placeholder="Please enter your email address" aria-label="Please enter your email address">
+                        </div>
+                        <div class="checkout-btn">
+                            <button id="emailContinue" type="button" name="emailContinue" class="btn btn-lg btn-primary btn-block">Continue</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div id="cart-sign-up" class="cart-drawer">
+            <div class="cart-drawer-nav">
+                <div id="backFromSignUp" class="cart-back-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div id="dismissCart">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="cart-header">
+                <h3>Hello!</h3>
+            </div>
+
+            <div class="cart-item-wrapper">
+                <form action="#" method="post" id="sign-up">
+                    <div class="cart-sign-up-form">
+                        <p class="sign-up-greeting">It looks like you're new, can we be friends?</p>
+                        <div class="form-group">
+                            <label for="cart-email">Email address*</label>
+                            <input type="email" class="form-control" id="cart-email" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-row form-group">
+                            <div class="col">
+                                <label for="cart-firstname">First Name*</label>
+                                <input id="cart-firstname" type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <label for="cart-lastname">Last Name*</label>
+                                <input id="cart-lastname" type="text" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cart-password">Enter a Password*</label>
+                            <input type="password" class="form-control" id="cart-password" placeholder="Password">
+                            <small class="form-text text-muted password-help">Minimum of 7 characters. Must include at least
+                                1 letter and 1 number</small>
+                            <small class="form-text text-muted required-field">*Required Field</small>
+                        </div>
+                        <div class="checkout-btn">
+                            <button id="checkoutNew" type="button" name="checkoutNew" class="btn btn-lg btn-primary btn-block">Continue</button>
+                            <small id="guestCheckout" class="form-text text-muted">
+                                <a href="#">Check out as guest?</a>
+                            </small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div id="cart-sign-in" class="cart-drawer">
+            <div class="cart-drawer-nav">
+                <div id="backFromSignIn" class="cart-back-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div id="dismissCart">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="cart-header">
+                <h3>Hello!</h3>
+            </div>
+
+            <div class="cart-item-wrapper">
+                <form action="#" method="post" id="sign-in">
+                    <div class="cart-email-form">
+                        <p class="sign-up-greeting">Welcome back!</p>
+                        <div class="form-group">
+                            <label for="cart-email-signin">Email address</label>
+                            <input id="cart-email-signin" class="form-control" type="email" placeholder="Email address" aria-label="Please enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="cart-password-signin">Password</label>
+                            <input id="cart-password-signin" class="form-control" type="password" placeholder="Password" aria-label="Please enter your password">
+                        </div>
+                        <div class="checkout-btn">
+                            <button id="checkoutReturning" type="button" name="checkoutReturning" class="btn btn-lg btn-primary btn-block">Continue</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Cart overlay element -->
+        <div class="overlayCart"></div>
+
+        <!-- Top bar -->
+        <div id="top-bar">
+            <nav class="navbar navbar-expand navbar-light fixed-top">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse d-flex justify-content-lg-between" id="navbarSupportedContent">
+                        <div id="navToggler">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/2017-logo.svg" alt="TeeTurtle" class="svg-logo">
+                        </a>
+                        <ul class="nav navbar-nav ml-auto account-links">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign In</a>
+                            </li>
+                        </ul>
+                        <div class="cart-wrapper">
+                            <button id="cartOpen" class="nav-link cart-link">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="cart-counter">2</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="collapse show">
+            <!-- Search form -->
+            <div class="input-group search-box">
+                <input class="form-control search-input" type="text" placeholder="Search..." aria-label="Search">
+                <div class="input-group-append">
+                    <button type="submit" class="input-group-text btn" id="sidebar-search">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#shirtsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Shirts
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="collapse list-unstyled" id="shirtsSubmenu">
+                        <li>
+                            <a href="#">Shirts 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Shirts 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Shirts 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#accSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accessories
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="collapse list-unstyled" id="accSubmenu">
+                        <li>
+                            <a href="#">Accessories 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Accessories 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Accessories 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#plushiesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Plushies
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="collapse list-unstyled" id="plushiesSubmenu">
+                        <li>
+                            <a href="#">Plushies 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Plushies 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Plushies 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Gift Cards</a>
+                </li>
+                <li>
+                    <a href="#">Clearance</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Nav overlay element -->
+    <div class="overlayNav"></div>
+
+    <div class="wrapper">
+        <!-- Page Content  -->
+        <div id="content">
+            <section class="faq-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Contact Us &mdash; Our Turtles are here to help!</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <p>Please select a support topic then fill out the following form:</p>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <select id="supportTopic" class="form-control">
+                                        <option value="0" selected>Select a support topic</option>
+                                        <option value="1">Returns/Exchanges</option>
+                                        <option value="2">Tracking</option>
+                                        <option value="3">Shipping</option>
+                                        <option value="4">Order Mishaps</option>
+                                        <option value="5">International Shipping</option>
+                                        <option value="6">Conventions</option>
+                                        <option value="7">Games/Kickstarter</option>
+                                        <option value="8">Other</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                                </div>
+                                <div class="d-none">
+                                    <ul class="nav nav-tabs" id="supportTopicTabs">
+                                        <li class="active"><a href="#default"></a></li>
+                                        <li><a href="#returns"></a></li>
+                                        <li><a href="#tracking"></a></li>
+                                        <li><a href="#shipping"></a></li>
+                                        <li><a href="#order"></a></li>
+                                        <li><a href="#international"></a></li>
+                                        <li><a href="#conventions"></a></li>
+                                        <li><a href="#games"></a></li>
+                                        <li><a href="#default"></a></li>
+                                    </ul>
+                                </div>
+                                <div class="form-group">
+                                    <div class="tab-content" id="supportTopicContent">
+                                        <div class="tab-pane fade show active" id="default" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+                                        <div class="tab-pane fade" id="returns" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p>If you live in the United States, fill out the form below and include
+                                                        your order number in the message to get a free return label. Otherwise,
+                                                        print and fill out a <a href="https://cdn.shopify.com/s/files/1/0267/4223/files/Return_Exchange_form.pdf?6876945546131808562">Return/Exchange Form</a>, package it up with the
+                                                        items you wanted to return or exchange, and mail it to us.</p>
+                                                    <p><strong>Please note:</strong> Some products are final sale, including Mystery Grab
+                                                        Bags and Gift Bundles. We can't accept returns or exchanges for final
+                                                        sale products or the items in them.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="tracking" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p>You can use our <a href="#">Track My Order</a> tool to track your order immediately!
+                                                        If it’s been over 3 days since your tracking status has changed,
+                                                        please fill out this form and include your order number in the message.</p>
+                                                    <p><strong>Please note:</strong> International orders do not allow tracking at this time.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p>Orders that do not include New Designs ship out in 1-2 days. Orders
+                                                        including New Designs ship out in 7-14 days.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="order" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p>If you received your order and noticed something wrong, please fill
+                                                        out this form and include your order number in the message.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="international" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p>We currently ship to over 50 countries! If you cannot select your
+                                                        country when checking out, fill out the form below and we will let you
+                                                        know if we are able to ship to your address.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="conventions" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p>If you placed an order at a convention, it will ship out around one
+                                                        week after the end of the show. If you have not received a shipping
+                                                        confirmation email, please fill out the form below and we will look into
+                                                        your order!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="games" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p>For Unstable Unicorns rules see <a href="#">here</a>.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactName">Name*</label>
+                                    <input type="text" class="form-control" id="contactName" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactEmail">Email*</label>
+                                    <input type="email" class="form-control" id="contactEmail" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactMessage">Message*</label>
+                                    <textarea name="" id="contactMessage" class="form-control" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-lg btn-block btn-primary add-to-cart-btn">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://cdn.shopify.com/s/files/1/0267/4223/files/cs-turtle.png?12513353310339691156" alt="" class="img-fluid">
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of container-->
+            </section>
+            <section class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Stay in the Know</h2>
+                            <p>Don't miss out on your next favorite tee! Add your e-mail address to get the latest on new
+                                designs and exclusive sales.</p>
+                            <form action="post">
+                                <div class="input-group email-box">
+                                    <input class="form-control email-input" type="email" placeholder="email@example.com" aria-label="Newsletter Signup">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="input-group-text btn" id="email-submit">
+                                            <h6>Submit
+                                                </h3>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/teeturtle">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="https://twitter.com/teeturtlenews">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/teeturtle/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.pinterest.com/teeturtle/">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 footer-nav">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <nav class="nav flex-column">
+                                        <a href="https://www.teeturtle.com/pages/FAQs?bn">FAQs</a>
+                                        <a href="https://www.teeturtle.com/pages/order-lookup?bn">Order Lookup</a>
+                                        <a href="https://www.teeturtle.com/pages/FAQs?bn#how-do-i-exchange-an-item">Returns
+                                            &amp; Exchanges</a>
+                                        <a href="https://www.teeturtle.com/pages/Contact-Us?bn">Contact Us</a>
+                                    </nav>
+                                </div>
+                                <div class="col-md-4">
+                                    <nav class="nav flex-column">
+                                        <a href="https://www.teeturtle.com/pages/About-Us?bn">About Us</a>
+                                        <a href="https://www.teeturtle.com/blogs/news?bn">Blog</a>
+                                        <a href="https://www.teeturtle.com/pages/privacy?bn">Privacy Policy</a>
+                                        <a href="https://teeturtle.recruitee.com?bn" target="_blank">Careers</a>
+                                    </nav>
+                                </div>
+                                <div class="col-md-4">
+                                    <nav class="nav flex-column">
+                                        <a href="https://www.teeturtle.com/pages/FAQs?bn">FAQs</a>
+                                        <a href="https://www.teeturtle.com/pages/order-lookup?bn">Order Lookup</a>
+                                        <a href="https://www.teeturtle.com/pages/FAQs?bn#how-do-i-exchange-an-item">Returns
+                                            &amp; Exchanges</a>
+                                        <a href="https://www.teeturtle.com/pages/Contact-Us?bn">Contact Us</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+
+        <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
